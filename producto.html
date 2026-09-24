@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MKM Stock Exporter — Chrome extension for card buyers</title>
+<meta name="description" content="Chrome extension that exports a Cardmarket seller's stock to CSV, values the lot and prepares your purchase offer. Free and Premium (subscription).">
+<style>
+  :root{--navy:#1f2733;--navy2:#172c47;--green:#2d8a4e;--ink:#1c2836;--muted:#5a6978;--line:#e3e9ef;--light:#f4f7f9;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);line-height:1.6}
+  a{color:var(--green)}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  header{background:var(--navy);color:#fff;padding:56px 0 48px;border-bottom:6px solid var(--green)}
+  header h1{margin:0 0 8px;font-size:2.1em}
+  header p{margin:0;color:#b4c4d6;font-size:1.15em}
+  .cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:700;text-decoration:none}
+  .btn-primary{background:var(--green);color:#fff}
+  .btn-ghost{background:#2a3a4d;color:#fff}
+  section{padding:40px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:1.4em;margin:0 0 16px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:640px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--light);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .card h3{margin:0 0 8px;font-size:1.1em}
+  .price{font-size:2em;font-weight:800;color:var(--navy)}
+  .muted{color:var(--muted)}
+  ol.flow{padding-left:20px}
+  ol.flow li{margin:8px 0}
+  ul.feat{padding-left:18px;margin:0}
+  ul.feat li{margin:6px 0}
+  footer{padding:28px 0;color:var(--muted);font-size:.9em}
+  .note{background:#fff8e6;border:1px solid #f0e2b6;border-radius:10px;padding:14px 16px;font-size:.95em}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>MKM Stock Exporter</h1>
+    <p>A Chrome extension for trading-card buyers: scan a Cardmarket seller's stock,
+       export it to CSV, value the lot and prepare your purchase offer.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="[URL_EXTENSION_CHROME_STORE]">Get the extension</a>
+      <a class="btn btn-ghost" href="https://mkmscan.lemonsqueezy.com/checkout/buy/eae233ca-ab2e-4e76-94e9-a2984ec4f0c5">Subscribe to Premium</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>What it does</h2>
+    <p>MKM Stock Exporter reads the card listings that are publicly displayed on a
+    Cardmarket seller's offers page (that the user opens) and exports them to a CSV
+    file. It also values the lot and helps the buyer prepare a fair purchase offer —
+    all inside the user's own browser. It is an unofficial tool and is not affiliated
+    with Cardmarket.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Free</h3>
+        <ul class="feat">
+          <li>Full seller-stock scan (no duplicates)</li>
+          <li>"Sellable card" filters (price, condition, foil, language)</li>
+          <li>Lot valuation</li>
+          <li>Summary CSV export (for Excel)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Premium (subscription)</h3>
+        <ul class="feat">
+          <li>Export to the TCG Power Tools format</li>
+          <li>Offer calculator + seller message generator</li>
+          <li>Lot analytics (value concentration, price tiers, splits)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Pricing</h2>
+    <p class="price">€4.99 / month</p>
+    <p class="muted">Monthly subscription. Cancel anytime; access lasts until the end
+    of the paid period.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How the subscription works (fulfillment)</h2>
+    <ol class="flow">
+      <li>Install the extension from the Chrome Web Store.</li>
+      <li>Click the cart button in the extension, or the "Subscribe" button above, to
+          open the Lemon Squeezy checkout.</li>
+      <li>After subscribing, you receive a <strong>license key</strong> on the
+          confirmation page and by email.</li>
+      <li>Paste the key into the extension's <strong>"License key"</strong> field and
+          click <strong>Activate</strong>.</li>
+      <li>The key is validated against our licensing endpoint and the Premium features
+          unlock instantly. Everything is digital and automatic — no physical goods.</li>
+    </ol>
+    <p class="note">Delivery method: 100% digital. The product is a browser extension
+    distributed via the Chrome Web Store; Premium is unlocked with a license key
+    delivered by Lemon Squeezy after purchase.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Privacy</h2>
+    <p>Everything is processed in the user's browser. No card data or personal data is
+    sent to any server. The only data transmitted is the license key, used solely to
+    validate the subscription. See our
+    <a href="[URL_POLITICA_PRIVACIDAD]">Privacy Policy</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Contact: [TU_EMAIL]</p>
+    <p>MKM Stock Exporter is an unofficial extension and is not affiliated with,
+    associated with, or endorsed by Cardmarket / Sammelkartenmarkt.</p>
+  </div>
+</footer>
+
+</body>
+</html>
